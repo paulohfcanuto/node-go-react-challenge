@@ -7,7 +7,8 @@
     "start": "node 'dist/server.js'",
     "build": "tsc -p . && ncp src/schema dist/schema",
     "start:dev": "npm run build:dev",
-    "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
+    "build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
+    "test": "mocha test/*.test.js"
   },
   "keywords": [],
   "author": "Paulo Henrique Fernandes Canuto",
@@ -17,10 +18,13 @@
     "@types/express": "^4.17.6",
     "@types/graphql-depth-limit": "^1.1.2",
     "@types/node": "^14.0.13",
+    "chai": "^4.2.0",
     "graphql-depth-limit": "^1.1.0",
     "graphql-import": "^1.0.2",
     "graphql-import-node": "0.0.4",
+    "mocha": "^8.2.1",
     "nodemon": "^2.0.4",
+    "supertest": "^6.0.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },

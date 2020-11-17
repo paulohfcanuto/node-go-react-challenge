@@ -31,3 +31,8 @@ query {
   }
 }
 ```
+
+## Como rodar os testes:
+ ```shell script  
+  npm run test
+ ```
