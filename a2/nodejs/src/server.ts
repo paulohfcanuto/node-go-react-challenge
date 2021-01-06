@@ -12,7 +12,7 @@ const server = new ApolloServer({
 });
 
 app.use("*", cors());
-// teste rebase
+
 server.applyMiddleware({ app, path: "/graphql" });
 
 app.listen({ port: 8080 }, () => {
